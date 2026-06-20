@@ -1,0 +1,28 @@
+{
+  "name": "paperclip-plugin-m365",
+  "version": "0.1.0",
+  "description": "Read-only Microsoft 365 awareness (Outlook, Teams, OneDrive) for AI agents, via Microsoft Graph with delegated auth. Runs as a mesh-runner executor on the work node.",
+  "type": "module",
+  "scripts": {
+    "login": "tsx src/cli/login.ts",
+    "briefing": "tsx src/cli/briefing.ts",
+    "query": "tsx src/cli/query.ts",
+    "typecheck": "tsc --noEmit",
+    "draft": "tsx src/cli/draft.ts",
+    "hold": "tsx src/cli/hold.ts",
+    "send": "tsx src/cli/send.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@azure/msal-node": "^2.16.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}
